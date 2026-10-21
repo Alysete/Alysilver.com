@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Aly Silver: AI governance, responsible AI, and technical program management. Paid engagements for companies, pro bono for nonprofits. Greater New York metro.">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Aly Silver Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: left-aligned single column, review-gate tags as the recurring motif; case studies as separate views */
+:root{
+  --bg:#F3F6F5; --surface:#FFFFFF; --fg:#16201E; --muted:#56625E; --line:#D3DCD9;
+  --accent:#0E6A5B; --accent-ink:#FFFFFF; --gate:#9A6412; --gate-bg:#FBF1DF; --tag-bg:#E3EEEB;
+  --display:"Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --body:"Literata", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1514; --surface:#161E1C; --fg:#E4EBE9; --muted:#9AA9A4; --line:#273230;
+  --accent:#5FC6AF; --accent-ink:#0B1412; --gate:#E8B455; --gate-bg:#2A2214; --tag-bg:#1C2A27; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1514; --surface:#161E1C; --fg:#E4EBE9; --muted:#9AA9A4; --line:#273230;
+  --accent:#5FC6AF; --accent-ink:#0B1412; --gate:#E8B455; --gate-bg:#2A2214; --tag-bg:#1C2A27; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.65;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.wrap{max-width:980px;margin:0 auto}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+h1,h2,h3{font-family:var(--display);line-height:1.1;text-wrap:balance;margin:0}
+p{margin:0}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+.preview{font-family:var(--mono);font-size:12px;color:var(--gate);background:var(--gate-bg);border:1px dashed var(--gate);
+  padding:8px 12px;border-radius:6px;margin-top:16px}
+
+nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-block:20px;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--display);font-weight:700;font-size:20px;color:var(--fg);text-decoration:none}
+.navlinks{display:flex;gap:20px;flex-wrap:wrap}
+.navlinks a{font-family:var(--mono);font-size:13px;color:var(--muted);text-decoration:none}
+.navlinks a[aria-current="page"],.navlinks a:hover{color:var(--fg)}
+
+.view{padding-block:48px 72px}
+.photo{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:10px;background:var(--tag-bg)}
+.hero-grid{display:grid;gap:28px;align-items:center}
+.hero-photo{max-width:240px;order:-1}
+@media (min-width:760px){.hero-grid{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:48px}.hero-photo{max-width:none;order:0}}
+.contact-grid{display:grid;gap:24px;align-items:center}
+.contact-grid .photo{max-width:220px}
+@media (min-width:760px){.contact-grid{grid-template-columns:200px minmax(0,1fr);gap:36px}}
+.feature{display:grid;gap:24px;margin-top:40px;border-top:1px solid var(--line);padding-top:32px}
+@media (min-width:760px){.feature{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:start}}
+.feature img{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:820/770;object-fit:cover;border-radius:10px;background:var(--tag-bg)}
+.feature-text{display:grid;gap:14px;min-width:0}
+.feature-text h2{font-size:clamp(26px,4vw,34px)}
+.feature-mark{display:grid;align-content:end;gap:6px;aspect-ratio:820/770;max-width:100%;border-radius:10px;padding:24px;background:var(--accent);color:var(--accent-ink)}
+.feature-mark b{font-family:var(--display);font-size:clamp(28px,4.5vw,40px);line-height:1.05;font-weight:700}
+.feature-mark span{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase}
+.meta{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.topics{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--line)}
+.topics li{display:grid;grid-template-columns:64px 1fr;gap:12px;padding-block:8px;border-bottom:1px solid var(--line);font-size:15px}
+.topics li span{font-family:var(--mono);font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:2px}
+.hero{display:grid;gap:20px;max-width:760px}
+.hero h1{font-size:clamp(48px,10vw,96px);font-weight:700;letter-spacing:-.02em}
+.role{font-family:var(--display);font-size:clamp(19px,2.6vw,24px);font-weight:500;color:var(--accent)}
+.lede{font-size:19px;max-width:62ch}
+.btnrow{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:8px}
+.btn{display:inline-block;font-family:var(--display);font-weight:500;font-size:16px;padding:12px 20px;border-radius:999px;
+  background:var(--accent);color:var(--accent-ink);text-decoration:none;border:1px solid var(--accent);cursor:pointer}
+.btn.ghost{background:transparent;color:var(--fg);border-color:var(--line)}
+
+section.block{margin-top:72px;display:grid;gap:24px}
+section.block>h2{font-size:clamp(26px,4vw,34px)}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.svc{display:grid;gap:8px;align-content:start;border-top:2px solid var(--fg);padding-top:16px}
+.svc h3{font-size:21px}
+.svc p{color:var(--muted);font-size:16px}
+.terms{font-family:var(--mono);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 24px}
+.terms span b{color:var(--accent);font-weight:500}
+
+.cases{display:grid;border-top:1px solid var(--line)}
+.case{display:grid;grid-template-columns:1fr auto;gap:8px 24px;align-items:baseline;padding-block:22px;border-bottom:1px solid var(--line);
+  text-decoration:none;color:var(--fg)}
+.case h3{font-size:clamp(20px,3vw,25px);font-weight:500;min-width:0}
+.case .arrow{font-family:var(--mono);color:var(--accent)}
+.case:hover h3{color:var(--accent)}
+.gate{grid-column:1/-1;justify-self:start;font-family:var(--mono);font-size:12.5px;color:var(--gate);background:var(--gate-bg);
+  padding:3px 10px;border-radius:4px}
+
+.creds{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 32px}
+.creds li{padding-block:12px;border-bottom:1px solid var(--line);font-size:16px}
+ul.plain{list-style:none;padding:0;margin:0}
+
+.contact{display:grid;gap:16px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:28px}
+.contact h2{font-size:clamp(24px,3.5vw,30px)}
+.email{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-family:var(--mono);font-size:15px}
+.email code{user-select:all;background:var(--tag-bg);padding:4px 8px;border-radius:4px;word-break:break-all}
+.copy{font-family:var(--mono);font-size:12px;background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:4px 10px;cursor:pointer}
+
+/* Case study */
+.back{font-family:var(--mono);font-size:13px;text-decoration:none}
+.cs-head{display:grid;gap:16px;margin-top:24px;max-width:800px}
+.cs-head h1{font-size:clamp(34px,6vw,58px);font-weight:700;letter-spacing:-.015em}
+.glance{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.glance span{font-family:var(--mono);font-size:12.5px;background:var(--tag-bg);padding:4px 10px;border-radius:4px}
+.glance span.g{background:var(--gate-bg);color:var(--gate)}
+.cs-body{display:grid;gap:36px;margin-top:48px}
+.cs-body>*:not(.diagram){max-width:68ch}
+.diagram{margin:0;display:grid;gap:16px;padding:20px;border:1px solid var(--line);border-radius:10px;background:var(--surface);min-width:0}
+.diagram .row-label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg)}
+.flow{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:30px}
+.flow li{position:relative;border:1px solid var(--line);border-radius:6px;padding:10px 12px;font-family:var(--display);font-size:15px;font-weight:500;line-height:1.3;background:var(--bg);color:var(--fg)}
+.flow li small{display:block;font-family:var(--mono);font-weight:400;font-size:11.5px;color:var(--muted);margin-top:4px}
+.flow li:not(:last-child)::after{content:"\2193";position:absolute;left:50%;bottom:-25px;transform:translateX(-50%);color:var(--accent);font-family:var(--mono);font-size:16px}
+.flow li.is-gate{border-color:var(--gate);background:var(--gate-bg);color:var(--gate)}
+.flow li.is-gate small{color:var(--gate)}
+.flow li.is-rework{border-style:dashed}
+.loop{font-family:var(--mono);font-size:13px;color:var(--muted);line-height:1.5}
+.loop b{color:var(--gate);font-weight:500}
+@media (min-width:760px){.flow{flex-direction:row;gap:30px}.flow li{flex:1 1 0;min-width:0}.flow li:not(:last-child)::after{content:"\2192";left:auto;right:-23px;top:50%;bottom:auto;transform:translateY(-50%)}}
+.cs-body h2{font-size:22px;font-weight:700;margin-bottom:10px}
+.cs-body ul{margin:0;padding-left:1.2em;display:grid;gap:8px}
+.cs-body p+p{margin-top:12px}
+.callout{border-left:3px solid var(--gate);background:var(--gate-bg);padding:16px 20px;border-radius:0 6px 6px 0}
+.callout .label{color:var(--gate);margin-bottom:6px}
+.callout p{font-family:var(--display);font-size:20px;font-weight:500;line-height:1.35}
+.takeaway{border-top:2px solid var(--fg);padding-top:16px}
+.next{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.next a{font-family:var(--display);font-size:18px;text-decoration:none}
+
+/* Resume */
+.rs-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px}
+.rs-head h1{font-size:clamp(36px,6vw,56px)}
+.rs-summary{font-size:19px;max-width:64ch;margin-top:24px}
+.job{display:grid;grid-template-columns:200px 1fr;gap:8px 32px;padding-block:24px;border-top:1px solid var(--line)}
+.job .when{font-family:var(--mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:4px}
+.job h3{font-size:20px}
+.job .co{color:var(--accent);font-family:var(--display);font-size:16px;margin-top:2px}
+.job ul{margin:12px 0 0;padding-left:1.1em;display:grid;gap:8px;font-size:16px}
+.job>div{min-width:0}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.skills span{font-family:var(--mono);font-size:12.5px;background:var(--tag-bg);padding:4px 10px;border-radius:4px}
+@media (max-width:640px){.job{grid-template-columns:1fr}.view{padding-block:32px 56px}}
+
+footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;
+  font-family:var(--mono);font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.view:not([hidden]){animation:in .35s ease-out}@keyframes in{from{transform:translateY(6px)}to{transform:none}}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+  <nav aria-label="Main">
+    <a class="brand" href="#home" data-go="home">Aly Silver</a>
+    <div class="navlinks">
+      <a href="#home" data-go="home">Home</a>
+      <a href="#work" data-go="work">Work</a>
+      <a href="#featured" data-go="featured">Featured</a>
+      <a href="#resume" data-go="resume">Resume</a>
+      <a href="#contact" data-go="contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <main id="v-home" class="view">
+    <div class="hero-grid">
+    <div class="hero">
+      <span class="label">Greater New York metro</span>
+      <h1>Aly Silver</h1>
+      <p class="role">AI Governance &amp; Responsible AI · Technical Program Manager</p>
+      <p class="lede">I help organizations put AI governance in place. That means frameworks, risk review, and the transparency that earns user trust. I've spent 10+ years as a technical program manager at Sonos, Meta Reality Labs, and Aurora (fka Uber ATG). I hold formal AI ethics training from Brown and Oxford.</p>
+      <div class="btnrow">
+        <a class="btn" href="https://calendar.app.google/nx4U2LGuUTfTzgim9" target="_blank" rel="noopener">Book a 30-minute intro call</a>
+        <a class="btn ghost" href="#work" data-go="work">See selected work</a>
+      </div>
+    </div>
+    <img class="photo hero-photo" src="img/headshot.jpg" alt="Aly Silver smiling outdoors, with curly blond hair and a dark sleeveless top" width="800" height="1000">
+    </div>
+
+    <section class="block" aria-labelledby="h-svc">
+      <h2 id="h-svc">What I do</h2>
+      <div class="services">
+        <div class="svc"><h3>AI governance framework setup</h3><p>Starting from zero: inventory your data and AI uses, map the laws that apply, write the policies, and set up a review process for new AI features.</p></div>
+        <div class="svc"><h3>Responsible AI implementation strategy</h3><p>Review a specific AI feature or vendor for risk. Define the controls, transparency language, and monitoring it needs.</p></div>
+        <div class="svc"><h3>Technical program and operations support</h3><p>Roadmaps, OKRs, and cross-team process for teams that need structure to deliver.</p></div>
+      </div>
+      <p class="terms"><span><b>Companies</b> · paid engagements</span><span><b>Nonprofits</b> · pro bono</span></p>
+    </section>
+
+    <section class="block" id="work-anchor" aria-labelledby="h-work">
+      <h2 id="h-work">Selected work</h2>
+      <div class="cases">
+        <a class="case" href="#governance" data-go="governance"><h3>Building AI governance from scratch at a civic recreation startup</h3><span class="arrow">→</span><span class="gate">Control: 7-day retention, then deletion</span></a>
+        <a class="case" href="#fairness" data-go="fairness"><h3>Finding and fixing a skin tone gap in avatar data capture</h3><span class="arrow">→</span><span class="gate">Gate: attribute checklist before sign-off</span></a>
+        <a class="case" href="#evaluation" data-go="evaluation"><h3>Release-blocking evaluation for a security AI model</h3><span class="arrow">→</span><span class="gate">Threshold: false positives &gt; 10% block release</span></a>
+        <a class="case" href="#risk-tiering" data-go="risk-tiering"><h3>Risk-tiered safety review for autonomous vehicle requirements</h3><span class="arrow">→</span><span class="gate">Tier: pedestrian interaction = highest</span></a>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="h-cred">
+      <h2 id="h-cred">Credentials</h2>
+      <ul class="plain creds">
+        <li>Sc.M., Technology Leadership (AI Governance &amp; Ethics), Brown University, December 2025</li>
+        <li>AI Ethics, Regulation &amp; Compliance Programme, University of Oxford, 2025</li>
+        <li>Certified AI Ethicist (CAIE), 2025</li>
+        <li>AI Security, Securiti, 2026</li>
+        <li>Member, All Tech Is Human and Association of AI Ethicists</li>
+        <li>Founder or lead of Women in Tech ERGs at four companies</li>
+      </ul>
+    </section>
+
+    <section class="block" id="contact-block">
+      <div class="contact contact-grid">
+        <img class="photo" src="img/portrait-path.jpg" alt="Aly Silver smiling on a tree-lined path, wearing a gray cardigan" width="720" height="900" loading="lazy">
+        <div style="display:grid;gap:16px;min-width:0">
+        <h2>Let's talk about your AI governance needs</h2>
+        <p>Book a 30-minute intro call, or email me directly.</p>
+        <div class="btnrow"><a class="btn" href="https://calendar.app.google/nx4U2LGuUTfTzgim9" target="_blank" rel="noopener">Book a 30-minute intro call</a></div>
+        <div class="email"><code>amargotsilver@gmail.com</code><button class="copy" type="button" id="copy-email">Copy</button></div>
+        <a href="https://www.linkedin.com/in/AlySilver" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FEATURED -->
+  <main id="v-featured" class="view" hidden>
+    <span class="label">Featured</span>
+    <h1 style="font-size:clamp(36px,6vw,56px);margin-top:8px">Talks and conversations</h1>
+    <article class="feature">
+      <div class="feature-mark" aria-hidden="true"><span>University of Oxford · Saïd Business School</span><b>Oxford Saïd Voices</b><span>Innovation and Strategy · Episode 1</span></div>
+      <div class="feature-text">
+        <span class="meta">Podcast guest · Oxford Saïd Business School · June 2026</span>
+        <h2>Oxford Saïd Voices: Innovation and Strategy</h2>
+        <p>Oxford faculty member Peter Ptashko talks with two alumni of Oxford's online AI programmes about strategic innovation and AI.</p>
+        <p>I talk about what the AI Ethics, Regulation and Compliance Programme gave me: a working understanding of international AI regulation such as GDPR, ethical decision-making, and the societal impact of AI systems.</p>
+        <div class="btnrow"><a class="btn" href="https://www.sbs.ox.ac.uk/oxford-answers/oxford-said-voices-innovation-and-strategy" target="_blank" rel="noopener">Listen on Oxford Saïd</a></div>
+      </div>
+    </article>
+    <article class="feature">
+      <img src="img/podcast.jpg" alt="Aly Silver speaking into a podcast microphone in a studio" width="820" height="770" loading="lazy">
+      <div class="feature-text">
+        <span class="meta">Podcast guest · Trailblaze Marketing · October 2023</span>
+        <h2>What is Ethical AI?</h2>
+        <p>A conversation with host Chris Parisi about the ethics of AI, diversity in tech, and how to build an effective task force.</p>
+        <ul class="topics" aria-label="Episode chapters">
+          <li><span>04:15</span>Early interest in tech and tech ethics</li>
+          <li><span>09:46</span>Why diversity is crucial to the tech industry</li>
+          <li><span>10:55</span>Promote diversity, assess impact, advocate for change</li>
+          <li><span>16:59</span>How to lead an effective task force</li>
+          <li><span>19:43</span>Understanding and shaping tech ethics and policy</li>
+          <li><span>21:56</span>Concerns about AI and children</li>
+        </ul>
+        <div class="btnrow"><a class="btn" href="https://youtu.be/XQDTfvykRjs" target="_blank" rel="noopener">Watch on YouTube</a></div>
+      </div>
+    </article>
+  </main>
+
+  <!-- CASE 1 -->
+  <main id="v-governance" class="view" hidden>
+    <a class="back" href="#work" data-go="work">← Selected work</a>
+    <div class="cs-head">
+      <span class="label">Case study · AI governance</span>
+      <h1>Building AI governance from scratch at a civic recreation startup</h1>
+      <div class="glance"><span>Role: governance consultant</span><span>Scope: data, privacy, first AI feature</span><span class="g">Control: 7-day retention</span></div>
+    </div>
+    <div class="cs-body">
+      <div><h2>The situation</h2><p>A civic recreation startup had no data governance function. It collected personal data (names, emails, dates of birth) and was about to launch its first AI feature.</p></div>
+      <div><h2>What I did</h2><ul>
+        <li>Assessed all personal data collected and reviewed applicable law in every state the company operated in, plus GDPR and CPRA.</li>
+        <li>Wrote the company's first Privacy Policy and Terms of Use.</li>
+        <li>When the team built an in-house people-counting model to show users how busy a court was, I built a governance checklist to document it. It covered what the backend and frontend did, which policies it touched, and what risks it created for the company, its users, and its municipal partners.</li>
+        <li>The core risks were identity and personal security, since the data touched on presence and location patterns.</li></ul></div>
+      <figure class="diagram" aria-label="How footage moved through the system">
+        <span class="row-label">How footage moved through the system</span>
+        <ol class="flow">
+          <li>Court camera captures footage<small>Input to people-counting model</small></li>
+          <li>Blur applied<small>Data minimization</small></li>
+          <li class="is-gate">Stored for 7 days<small>Municipal partners may review</small></li>
+          <li>Deleted<small>Retention limit</small></li>
+        </ol>
+        <p class="loop">Nothing retained or shared beyond the 7-day window.</p>
+      </figure>
+      <div><h2>Controls, in detail</h2><ul>
+        <li>Data minimization: blurring applied to raw footage.</li>
+        <li>Retention limit: 7-day storage window, then deletion.</li>
+        <li>Access control: municipal partners could review footage within that window. Nothing was retained or shared beyond it.</li></ul></div>
+      <div><h2>Transparency, on two tracks</h2><ul>
+        <li>Municipal partners: contract language disclosing the AI feature, so there were no surprises.</li>
+        <li>End users: updated Privacy Policy and Terms of Use, plus an in-app notice explaining that an AI feature was in use and why. Not just buried in legal text.</li></ul></div>
+      <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">Most small teams don't need a heavy compliance program. They need a clear record of what their AI does, the risks it creates, and controls sized to those risks.</p></div>
+    </div>
+    <div class="next"><a href="#work" data-go="work">← All work</a><a href="#fairness" data-go="fairness">Next: avatar data capture →</a></div>
+  </main>
+
+  <!-- CASE 2 -->
+  <main id="v-fairness" class="view" hidden>
+    <a class="back" href="#work" data-go="work">← Selected work</a>
+    <div class="cs-head">
+      <span class="label">Case study · Bias and fairness</span>
+      <h1>Finding and fixing a skin tone gap in avatar data capture</h1>
+      <div class="glance"><span>Role: technical program manager</span><span>Setting: metaverse research company</span><span class="g">Gate: attribute checklist</span></div>
+    </div>
+    <div class="cs-body">
+      <div><h2>The situation</h2><p>At a metaverse research company, I worked hands-on with engineers building hardware systems that captured human data for avatar research.</p></div>
+      <div><h2>The problem</h2><p>I asked how the systems performed for people with disabilities, different skin tones, tattoos, and piercings. No one had concrete answers. The operators who ran sessions with participants knew some appearances weren't captured correctly. That data was effectively excluded from the foundational models. It was a known issue, but undocumented.</p></div>
+      <div><h2>What I did</h2><ul>
+        <li>Pulled together a cross-rank group of researchers, operators, and managers. The consistent gap: no one had documented what could and couldn't be captured.</li>
+        <li>Founded the Data Diversity Program with a mission statement and values.</li>
+        <li>Built a checklist covering the full range of physical attributes, then used it to audit existing capture systems.</li></ul></div>
+      <div><h2>A concrete finding</h2><p>The capture suite wasn't reliably capturing darker skin tones, so the data wasn't usable for avatars. We traced it to lighting: at certain brightness levels, darker skin reflected light back as a sheen. We ran lighting experiments with the research team and validated the fix with participants who had darker skin tones. The pipeline then produced accurate avatars for them.</p></div>
+      <figure class="diagram" aria-label="From undocumented gap to standing gate">
+        <span class="row-label">From undocumented gap to standing gate</span>
+        <ol class="flow">
+          <li>Ask operators<small>Known but undocumented gaps</small></li>
+          <li>Build attribute checklist<small>Skin tone, disability, tattoos, piercings</small></li>
+          <li>Audit capture systems<small>Finding: darker skin not captured</small></li>
+          <li>Fix and validate<small>Lighting experiments, participant testing</small></li>
+          <li class="is-gate">Standing gate<small>Every system passes before sign-off</small></li>
+        </ol>
+      </figure>
+      <div class="callout"><div class="label">The outcome</div><p>The checklist became a standing gate. Every capture system had to pass testing across a wider range of appearances before sign-off.</p></div>
+      <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">Bias often lives in undocumented gaps that the people closest to the work already know about. Asking them, and writing it down, is where fairness work starts.</p></div>
+    </div>
+    <div class="next"><a href="#governance" data-go="governance">← Governance from scratch</a><a href="#evaluation" data-go="evaluation">Next: security AI evaluation →</a></div>
+  </main>
+
+  <!-- CASE 3 -->
+  <main id="v-evaluation" class="view" hidden>
+    <a class="back" href="#work" data-go="work">← Selected work</a>
+    <div class="cs-head">
+      <span class="label">Case study · Model evaluation</span>
+      <h1>Release-blocking evaluation for a security AI model</h1>
+      <div class="glance"><span>Role: AI evaluation and QA lead</span><span>Setting: early-stage startup</span><span class="g">Threshold: FP &gt; 10% blocks release</span></div>
+    </div>
+    <div class="cs-body">
+      <div><h2>The situation</h2><p>I led evaluation for a desktop security product at an early-stage startup. It flagged phishing and unsafe links in real time, and flagged personal data being copied into applications.</p></div>
+      <div><h2>What I built</h2><ul>
+        <li>Two testing scripts, built with Claude Code. One benchmarked the model against a known set of false positives and negatives to catch drift or regression. The other scanned a sample of the top 1M websites, which are presumed safe, to surface new false positives.</li>
+        <li>A human-in-the-loop review: I confirmed each new false positive manually and added it to a known-FP database so engineering could retrain the model.</li>
+        <li>Periodic re-checks of older false positives to confirm whether the model had improved.</li></ul></div>
+      <div class="callout"><div class="label">The control</div><p>A false positive rate above 10%, against an expected baseline of 0%, blocks release.</p></div>
+      <figure class="diagram" aria-label="Evaluation loop for each build">
+        <span class="row-label">Evaluation loop for each build</span>
+        <ol class="flow">
+          <li>New build or model update</li>
+          <li>Benchmark known FP/FN set<small>Catches drift and regression</small></li>
+          <li>Scan top 1M sites<small>Surfaces new false positives</small></li>
+          <li>Human review<small>Confirmed FPs go to the known-FP database</small></li>
+          <li class="is-gate">Release gate<small>FP rate above 10% blocks release</small></li>
+        </ol>
+        <p class="loop"><b>Above 10%:</b> fix, retrain, and run the loop again. Older known FPs are re-checked periodically.</p>
+      </figure>
+      <div><h2>The control worked</h2><p>On the 1.0 release, a major UX update shipped with a model update and false positives spiked above 10%. Most were subdomains on platforms like GitHub and Substack. These are known-safe hosting patterns, so we allowlisted them. That resolved most of the flagged cases and brought us back under the threshold.</p></div>
+      <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">A control only matters if it can stop a release. Set a measurable threshold, track it continuously, and re-check whenever the model or product changes.</p></div>
+    </div>
+    <div class="next"><a href="#fairness" data-go="fairness">← Avatar data capture</a><a href="#risk-tiering" data-go="risk-tiering">Next: risk-tiered review →</a></div>
+  </main>
+
+  <!-- CASE 4 -->
+  <main id="v-risk-tiering" class="view" hidden>
+    <a class="back" href="#work" data-go="work">← Selected work</a>
+    <div class="cs-head">
+      <span class="label">Case study · Risk tiering</span>
+      <h1>Risk-tiered safety review for autonomous vehicle requirements</h1>
+      <div class="glance"><span>Role: program manager, Product team</span><span>Setting: autonomous vehicle company</span><span class="g">Tier: pedestrian = highest</span></div>
+    </div>
+    <div class="cs-body">
+      <div><h2>The situation</h2><p>At an autonomous vehicle company, I was the program manager on the Product team delivering technical requirements for autonomous vehicle behavior.</p></div>
+      <div><h2>The problem</h2><p>Requirements moved through a spreadsheet in sequence: Product drafted, Engineering signed off, then Safety and Legal reviewed. That took weeks. Safety or Legal often flagged issues after Engineering had started building, so the cycle restarted. The churn was expensive and demoralizing.</p></div>
+      <div><h2>What I did</h2><ul>
+        <li>Proposed moving review into Jira, with Product, Engineering, and Safety/Legal all signing off before engineering work began.</li>
+        <li>Product pushed back hard, worried about overhead. I showed that upfront sign-off would be faster overall because it removed the late rework cycle.</li>
+        <li>Built the full Jira project: workflows, required sign-off gates so nothing advanced without every team's approval, and a bulk upload of existing requirements. Then onboarded Safety and Legal, who had never used Jira.</li>
+        <li>Ran a trial on P0 requirements first. Once Product saw less rework, they were fully on board, and it became the standard process.</li></ul></div>
+      <figure class="diagram" aria-label="Requirements review before and after">
+        <span class="row-label">Before: sequential review</span>
+        <ol class="flow">
+          <li>Product drafts</li>
+          <li>Engineering signs off</li>
+          <li>Engineering starts building</li>
+          <li class="is-rework">Safety and Legal review<small>Weeks later</small></li>
+        </ol>
+        <p class="loop"><b>Issue flagged:</b> the cycle restarts after build has begun.</p>
+        <span class="row-label" style="margin-top:12px">After: parallel sign-off in Jira</span>
+        <ol class="flow">
+          <li>Product drafts</li>
+          <li class="is-gate">Product, Engineering, Safety and Legal sign off<small>Required gate, no step skipped</small></li>
+          <li>Engineering builds</li>
+        </ol>
+      </figure>
+      <div><h2>Risk tiering in practice</h2><p>Not every requirement carried the same risk. Pedestrian interaction requirements were the highest tier and got more review time and scrutiny by default.</p><p>One example covered vehicle behavior around pedestrians with disabilities in crosswalks. Product and Engineering wanted to move forward. Safety and Legal needed more time for edge cases. We worked it through in a biweekly working session.</p></div>
+      <div class="callout"><div class="label">The resolution</div><p>Signed off with additional safety controls, which could be revisited once the technology had proven itself.</p></div>
+      <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">Controls shouldn't be static. Match their intensity to current risk and demonstrated maturity, and define what would trigger a review.</p></div>
+    </div>
+    <div class="next"><a href="#evaluation" data-go="evaluation">← Security AI evaluation</a><a href="#work" data-go="work">All work →</a></div>
+  </main>
+
+  <!-- RESUME -->
+  <main id="v-resume" class="view" hidden>
+    <div class="rs-head">
+      <div><span class="label">Resume</span><h1 style="margin-top:8px">Aly Silver</h1></div>
+    </div>
+    <p class="rs-summary">Technical program manager with 10+ years delivering software, hardware, and AI/ML programs at Sonos, Meta Reality Labs, and Aurora. I build governance where none exists: risk review, model evaluation, privacy policy, and the cross-team process that makes it stick. Formally trained in AI ethics through Brown and Oxford.</p>
+
+    <section class="block" aria-labelledby="h-exp">
+      <h2 id="h-exp">Experience</h2>
+      <div>
+        <div class="job"><div class="when">Feb 2026 – Oct 2026</div><div><h3>Product &amp; Program Manager, AI Evaluation &amp; QA Consultant</h3><div class="co">Charlemagne Labs, Inc.</div><ul>
+          <li>Lead end-to-end ML model evaluation for an AI security product, assessing model performance, drift, and reliability to determine whether models are functioning as intended and meeting user-facing quality standards.</li>
+          <li>Oversee product and program management for QA processes, defining test plans and acceptance criteria used to validate model reliability prior to deployment.</li>
+          <li>Partner with engineering and product leadership to translate evaluation findings into priorities and roadmap decisions.</li>
+          <li>Manage the pre-sales-to-onboarding journey for on-device ML model deployment, coordinating across product, engineering, and customer-facing teams.</li></ul></div></div>
+        <div class="job"><div class="when">Mar 2025 – May 2026</div><div><h3>Data/AI Governance Consultant</h3><div class="co">ParkView</div><ul>
+          <li>Directed the H1 2026 product roadmap, integrating regulatory compliance and safety protocols into the core AI-driven product lifecycle across 3 products.</li>
+          <li>Authored and enforced 5 PII removal and data obfuscation policies to meet state-law requirements, ensure platform security, and gain user trust.</li>
+          <li>Evaluated AI product requirements, third-party partner privacy and security policies, and user transparency communications for AI-enabled platforms.</li>
+          <li>Developed internal audit structures, risk-tiering criteria, and data governance frameworks to maintain continuous regulatory compliance for AI-driven features.</li>
+          <li>Established innovative internal AI protocols and best practices to ensure teams leverage AI responsibly.</li></ul></div></div>
+        <div class="job"><div class="when">Jan 2023 – Feb 2025</div><div><h3>Technical Program Manager</h3><div class="co">Sonos, Inc.</div><ul>
+          <li>Managed stakeholder communication and program status across key stakeholders, including executives, leading to a 30% increase in project alignment and a 20% reduction in escalated issues.</li>
+          <li>Redesigned the Partner Certification process, including third-party review and onboarding with partners such as Apple, Amazon, and Spotify, cutting certification time from 8 to 6 weeks (25% reduction).</li>
+          <li>Directed software delivery, risk identification, and issue tracking for new product and feature launches from inception through production.</li>
+          <li>Led the Women@Sonos employee resource group (ERG).</li></ul></div></div>
+        <div class="job"><div class="when">Sep 2021 – Jun 2022</div><div><h3>Technical Program Manager</h3><div class="co">Meta Reality Labs</div><ul>
+          <li>Aligned strategy between cross-functional stakeholders, including Legal and Security, to build and iterate data capture systems supporting ML research for the metaverse.</li>
+          <li>Built a roadmap and OKR process with technical research leaders for H1 planning, accelerating program transparency.</li>
+          <li>Revamped the mobile capture system verification process, identifying and resolving 20+ friction points for a ~60% increase in operational efficiency within 8 weeks.</li>
+          <li>Rolled out standardized project management tooling and best practices across 200+ staff members.</li>
+          <li>Co-founded and led a data diversity initiative across the research lab, evaluating existing models and data collection processes to identify and reduce bias, establishing a standard for equitable data practices in AI/ML research.</li></ul></div></div>
+        <div class="job"><div class="when">Dec 2019 – Sep 2021</div><div><h3>Product &amp; Design Program Manager</h3><div class="co">Aurora (fka Uber ATG)</div><ul>
+          <li>Directed cross-functional roadmapping and OKR frameworks across 15 digital products spanning product, design, and engineering.</li>
+          <li>Delivered an internal permissions management tool in under a quarter, working cross-functionally across 4 engineering teams and 3 stakeholder teams.</li>
+          <li>Served as JIRA admin representing Product &amp; Design's tracking requirements, improving cross-team alignment.</li>
+          <li>Identified inefficiencies in the product-to-engineering-to-legal/safety review process for AV system requirements and restructured the workflow to bring risk and safety stakeholders in earlier, reducing rework and improving decision quality.</li>
+          <li>Led the Women@Aurora and Women@Uber employee resource groups.</li></ul></div></div>
+        <div class="job"><div class="when">Jul 2018 – Dec 2019</div><div><h3>Sr. Project Manager</h3><div class="co">American Eagle Outfitters</div><ul>
+          <li>Deployed Jira-based project tracking for the Innovation team, improving on-time delivery 30% and stakeholder awareness scores 25% in the first quarter.</li>
+          <li>Defined technical requirements and acceptance criteria for ML-driven app and site personalization, delivering a 10%+ increase in conversion on recommended products, and led stand-ups, sprint planning, story grooming, and retrospectives across iOS, site, and data science teams.</li>
+          <li>Orchestrated the Facebook Messenger AI chatbot program through external vendor partnerships, increasing active engagement 10%.</li></ul></div></div>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="h-edu">
+      <h2 id="h-edu">Education &amp; credentials</h2>
+      <ul class="plain creds">
+        <li>Brown University, Sc.M., Technology Leadership, Concentration: AI Governance and Ethics, December 2025</li>
+        <li>Saïd Business School, University of Oxford, AI Ethics, Regulation and Compliance Programme, 2025</li>
+        <li>University of Pittsburgh, B.S., Information Science, Concentration: User-Centered Design, Cum Laude, 2015</li>
+        <li>Certified AI Ethicist (CAIE), November 2025</li>
+        <li>AI Security, Securiti, January 2026</li>
+        <li>Member, All Tech Is Human · Association of AI Ethicists</li>
+      </ul>
+    </section>
+
+    <section class="block" aria-labelledby="h-sk">
+      <h2 id="h-sk">Expertise</h2>
+      <div class="skills">
+        <span>AI Governance &amp; Ethics</span><span>Responsible AI Frameworks</span><span>AI Ethics Strategy</span><span>AI/ML Risk Assessment</span><span>Privacy &amp; Security Strategy</span><span>QA</span><span>Model Evaluation (Performance, Drift &amp; Reliability)</span><span>NIST AI RMF (familiarity)</span><span>EU AI Act</span><span>CPRA</span><span>GDPR</span><span>Risk Tiering &amp; Control Documentation</span><span>Third-Party AI &amp; Vendor Review</span><span>PII Removal &amp; Data Obfuscation</span><span>Regulatory Roadmap Creation</span><span>State-Law Compliant Privacy Policies</span><span>Data Auditing</span><span>Agile/Scrum</span><span>Cross-Functional Stakeholder Management</span><span>Monitoring, Evaluating &amp; Reporting</span><span>Team Training &amp; Community-Building</span>
+      </div>
+      <p class="label" style="margin-top:8px">Tools</p>
+      <div class="skills"><span>Jira</span><span>Confluence</span><span>Asana</span><span>Figma</span><span>GitHub</span><span>Tableau</span><span>Claude</span><span>Gemini</span><span>Oxethica (coursework)</span></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Aly Silver · Greater New York metro</span>
+    <span>amargotsilver@gmail.com · <a href="https://www.linkedin.com/in/AlySilver" target="_blank" rel="noopener">LinkedIn</a></span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var views=["home","featured","governance","fairness","evaluation","risk-tiering","resume"];
+  function show(token){
+    var target=token, scrollTo=null;
+    if(token==="work"){target="home";scrollTo="work-anchor";}
+    if(token==="contact"){target="home";scrollTo="contact-block";}
+    if(views.indexOf(target)<0) target="home";
+    views.forEach(function(v){document.getElementById("v-"+v).hidden=(v!==target);});
+    document.querySelectorAll(".navlinks a").forEach(function(a){
+      var g=a.getAttribute("data-go");
+      if(g===token||(g==="work"&&["governance","fairness","evaluation","risk-tiering"].indexOf(target)>=0&&token!=="contact")) a.setAttribute("aria-current","page");
+      else a.removeAttribute("aria-current");
+    });
+    if(scrollTo){var el=document.getElementById(scrollTo);if(el) el.scrollIntoView();}
+    else window.scrollTo(0,0);
+  }
+  document.addEventListener("click",function(e){
+    var a=e.target.closest("[data-go]");
+    if(!a) return;
+    e.preventDefault();
+    var t=a.getAttribute("data-go");
+    try{history.replaceState(null,"","#"+t);}catch(_){}
+    show(t);
+  });
+  document.querySelectorAll('[aria-disabled="true"]').forEach(function(a){
+    if(!a.hasAttribute("data-go")) a.addEventListener("click",function(e){e.preventDefault();});
+  });
+  var btn=document.getElementById("copy-email");
+  btn.addEventListener("click",function(){
+    var txt="amargotsilver@gmail.com";
+    function done(){btn.textContent="Copied";setTimeout(function(){btn.textContent="Copy";},1500);}
+    try{navigator.clipboard.writeText(txt).then(done,function(){sel();});}catch(_){sel();}
+    function sel(){var r=document.createRange();r.selectNodeContents(btn.previousElementSibling);var s=getSelection();s.removeAllRanges();s.addRange(r);}
+  });
+  show((location.hash||"#home").slice(1));
+})();
+</script>
+
+</body>
+</html>
