@@ -55,6 +55,9 @@ nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between
 @media (max-width:520px){.navlinks{gap:12px}.navlinks a{font-size:12px}}
 .navlinks a{font-family:var(--mono);font-size:13px;color:var(--muted);text-decoration:none}
 .navlinks a[aria-current="page"],.navlinks a:hover{color:var(--fg)}
+.navlinks{margin-left:auto}
+.navcta{font-family:var(--display);font-weight:500;font-size:14px;padding:7px 14px;border-radius:999px;background:var(--accent);color:var(--accent-ink);text-decoration:none;white-space:nowrap}
+@media (max-width:640px){.navcta{order:2}.navlinks{order:3;width:100%;margin-left:0}}
 
 .view{padding-block:48px 72px}
 .photo{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:10px;background:var(--tag-bg)}
@@ -185,6 +188,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
       <a href="#resume" data-go="resume">Resume</a>
       <a href="#contact" data-go="contact">Contact</a>
     </div>
+    <a class="navcta" href="https://calendar.app.google/nx4U2LGuUTfTzgim9" target="_blank" rel="noopener">Book a call</a>
   </nav>
 
   <!-- HOME -->
@@ -193,7 +197,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     <div class="hero">
       <h1>Aly Silver</h1>
       <p class="role">AI Governance &amp; Responsible AI · Technical Program Manager</p>
-      <p class="lede">I help small organizations put AI governance in place, sized to the team, not a heavy compliance program. That means a clear record of what your AI does, controls sized to the risk, and transparency that earns customer trust. I built AI and data governance from scratch as a startup consultant, after 10+ years in product and program management at Sonos, Meta Reality Labs, and Aurora (Uber ATG). Formally trained in AI ethics at Brown and Oxford.</p>
+      <p class="lede">Clear AI policies and a review process your team can actually run. Launching an AI feature, or getting asked how you use AI? I help growing companies and nonprofits answer with confidence. Trained at Brown and Oxford, and I've built a governance program from scratch.</p>
       <p class="services-line">Services: AI Governance Setup, AI Usage and Vendor Review, and Program and Operations Support.</p>
       <div class="btnrow">
         <a class="btn" href="https://calendar.app.google/nx4U2LGuUTfTzgim9" target="_blank" rel="noopener">Book a 30-minute intro call</a>
