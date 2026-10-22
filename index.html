@@ -165,6 +165,11 @@ ul.plain{list-style:none;padding:0;margin:0}
 .job .co{color:var(--accent);font-family:var(--display);font-size:16px;margin-top:2px}
 .job ul{margin:12px 0 0;padding-left:1.1em;display:grid;gap:8px;font-size:16px}
 .job>div{min-width:0}
+.client{margin-top:16px;padding-left:14px;border-left:2px solid var(--line)}
+.client-head{font-family:var(--display);font-size:16px;font-weight:500;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline}
+.client-co{color:var(--accent)}
+.client-when{font-family:var(--mono);font-size:12.5px;color:var(--muted);font-weight:400;margin-left:auto}
+.client ul{margin-top:8px}
 .skills{display:flex;flex-wrap:wrap;gap:8px}
 .skills span{font-family:var(--mono);font-size:12.5px;background:var(--tag-bg);padding:4px 10px;border-radius:4px}
 @media (max-width:640px){.job{grid-template-columns:1fr}.view{padding-block:32px 56px}}
@@ -255,7 +260,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
         <li>Certified AI Ethicist (CAIE), 2025</li>
         <li>AI Governance Intensive, Harvard Data Science Review, 2026</li>
         <li>Member, All Tech Is Human and Association of AI Ethicists</li>
-        <li>Led Women in Tech ERGs at Sonos, Aurora/Uber, American Eagle, and GEICO</li>
+        <li>Led and co-created Women in Tech ERGs at multiple companies</li>
       </ul>
     </section>
 
@@ -443,23 +448,26 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     <div class="rs-head">
       <div><span class="label">Resume</span><h1 style="margin-top:8px">Aly Silver</h1></div>
       <span class="label">Greater New York Metropolitan Area</span>
+      <a class="btn ghost" href="Aly_Silver_Resume.pdf" target="_blank" rel="noopener">Download PDF</a>
     </div>
     <p class="rs-summary">Product and program manager with 10+ years delivering software, hardware, and AI/ML programs at tech companies, from Fortune 500 to startups. I build governance where none exists: risk review, model evaluation, and the cross-team process that makes it stick. Formally trained in AI ethics through Brown and Oxford, with hands-on experience in AI evaluation and deployment.</p>
 
     <section class="block" aria-labelledby="h-exp">
       <h2 id="h-exp">Experience</h2>
       <div>
-        <div class="job"><div class="when">Feb 2026 – Oct 2026</div><div><h3>Product &amp; Program Manager, AI Evaluation &amp; QA Consultant</h3><div class="co">Charlemagne Labs, Inc.</div><ul>
-          <li>Lead end-to-end ML model evaluation for an AI security product, assessing model performance, drift, and reliability to determine whether models are functioning as intended and meeting user-facing quality standards.</li>
-          <li>Oversee product and program management for QA processes, defining test plans and acceptance criteria used to validate model reliability prior to deployment.</li>
-          <li>Partner with engineering and product leadership to translate evaluation findings into priorities and roadmap decisions.</li>
-          <li>Manage the pre-sales-to-onboarding journey for on-device ML model deployment, coordinating across product, engineering, and customer-facing teams.</li></ul></div></div>
-        <div class="job"><div class="when">Mar 2025 – May 2026</div><div><h3>Data/AI Governance Consultant</h3><div class="co">ParkView</div><ul>
+        <div class="job"><div class="when">Mar 2025 – Present</div><div><h3>Independent AI Governance &amp; Product Consultant</h3><div class="co">Contract engagements</div>
+          <div class="client"><div class="client-head"><span class="client-co">Charlemagne Labs, Inc.</span> · Product &amp; Program Manager, AI Evaluation &amp; QA<span class="client-when">Feb 2026 – Oct 2026</span></div><ul>
+          <li>Led end-to-end ML model evaluation for an AI security product, assessing model performance, drift, and reliability to determine whether models were functioning as intended and meeting user-facing quality standards.</li>
+          <li>Oversaw product and program management for QA processes, defining test plans and acceptance criteria used to validate model reliability prior to deployment.</li>
+          <li>Partnered with engineering and product leadership to translate evaluation findings into priorities and roadmap decisions.</li>
+          <li>Managed the pre-sales-to-onboarding journey for on-device ML model deployment, coordinating across product, engineering, and customer-facing teams.</li></ul></div>
+          <div class="client"><div class="client-head"><span class="client-co">ParkView</span> · Data/AI Governance Consultant<span class="client-when">Mar 2025 – May 2026</span></div><ul>
           <li>Directed the H1 2026 product roadmap, integrating regulatory compliance and safety protocols into the core AI-driven product lifecycle across 3 products.</li>
           <li>Authored 5 PII removal and data obfuscation policies to meet state-law requirements, ensure platform security, and gain user trust.</li>
           <li>Evaluated AI product requirements, third-party partner privacy and security policies, and user transparency communications for AI-enabled platforms.</li>
           <li>Developed internal audit structures, risk-tiering criteria, and data governance frameworks to support ongoing regulatory compliance for AI-driven features.</li>
-          <li>Established internal AI protocols and best practices to ensure teams leverage AI responsibly.</li></ul></div></div>
+          <li>Established internal AI protocols and best practices to ensure teams leverage AI responsibly.</li></ul></div>
+        </div></div>
         <div class="job"><div class="when">Jan 2023 – Feb 2025</div><div><h3>Technical Program Manager</h3><div class="co">Sonos, Inc.</div><ul>
           <li>Managed stakeholder communication and program status across key stakeholders, including executives, leading to a 30% increase in project alignment and a 20% reduction in escalated issues.</li>
           <li>Redesigned the Partner Certification process, including third-party review and onboarding with partners such as Apple, Amazon, and Spotify, cutting certification time from 8 to 6 weeks (25% reduction).</li>
@@ -480,7 +488,17 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
         <div class="job"><div class="when">Jul 2018 – Dec 2019</div><div><h3>Sr. Project Manager</h3><div class="co">American Eagle Outfitters</div><ul>
           <li>Deployed Jira-based project tracking for the Innovation team, improving on-time delivery 30% and stakeholder awareness scores 25% in the first quarter.</li>
           <li>Defined technical requirements and acceptance criteria for ML-driven app and site personalization, delivering a 10%+ increase in conversion on recommended products, and led stand-ups, sprint planning, story grooming, and retrospectives across iOS, site, and data science teams.</li>
-          <li>Orchestrated the Facebook Messenger AI chatbot program through external vendor partnerships, increasing active engagement 10%.</li></ul></div></div>
+          <li>Orchestrated the Facebook Messenger AI chatbot program through external vendor partnerships, increasing active engagement 10%.</li>
+          <li>Founded American Eagle's first employee resource group, Women in Tech.</li></ul></div></div>
+        <div class="job"><div class="when">May 2017 – Jul 2018</div><div><h3>Sr. Project Manager</h3><div class="co">Branding Brand</div><ul>
+          <li>Led a team to deliver a new CMS to clients within 30 days, and established a protocol for implementing products with clients to meet their business KPIs.</li>
+          <li>Managed up to five clients' mobile apps and sites, while their users grew 14%, sessions 18%, revenue 70%, and conversion 17%.</li>
+          <li>Introduced usability testing into the design process, and built a user feedback process that turned feedback into actionable work.</li></ul></div></div>
+        <div class="job"><div class="when">Jul 2015 – May 2017</div><div><h3>Product Manager</h3><div class="co">GEICO</div><p style="font-size:14px;color:var(--muted);margin-top:4px">Joined through the Technology Development Program as Application Systems Analyst</p><ul>
+          <li>Led a cross-functional scrum team to deliver the in-app Mobile Virtual Assistant from design to implementation, surpassing business goals.</li>
+          <li>Built the Virtual Assistant roadmap from customer feedback and internal KPIs.</li>
+          <li>Owned the full mobile app redesign and guided the app team in agile practices.</li>
+          <li>Managed the automated testing process for app releases.</li></ul></div></div>
       </div>
     </section>
 
