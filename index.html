@@ -83,6 +83,11 @@ nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between
 .hero h1{font-size:clamp(48px,10vw,96px);font-weight:700;letter-spacing:-.02em}
 .role{font-family:var(--display);font-size:clamp(19px,2.6vw,24px);font-weight:500;color:var(--accent)}
 .lede{font-size:19px;max-width:62ch}
+.hero-q{font-family:var(--display);font-size:clamp(22px,3vw,28px);font-weight:500;line-height:1.25;max-width:32ch;text-wrap:balance}
+.why{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line)}
+.why-wrap{display:grid;gap:12px;margin-top:8px}
+.why-wrap h3{font-size:22px}
+.why li{padding-block:14px;border-bottom:1px solid var(--line);font-size:17px;max-width:72ch}
 .btnrow{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:8px}
 .btn{display:inline-block;font-family:var(--display);font-weight:500;font-size:16px;padding:12px 20px;border-radius:999px;
   background:var(--accent);color:var(--accent-ink);text-decoration:none;border:1px solid var(--accent);cursor:pointer}
@@ -202,7 +207,8 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     <div class="hero">
       <h1>Aly Silver</h1>
       <p class="role">AI Governance &amp; Responsible AI · Technical Program Manager</p>
-      <p class="lede">Clear AI policies and a review process your team can actually run. Launching an AI feature, or getting asked how you use AI? I help growing companies and nonprofits answer with confidence. Trained at Brown and Oxford, and I've built a governance program from scratch.</p>
+      <p class="hero-q">Launching an AI feature? Do you know how your team is using AI?</p>
+      <p class="lede">I help growing companies and nonprofits get clear on both, with AI policies and a review process your team can actually run. Trained at Brown and Oxford, and I've built a governance program from scratch.</p>
       <p class="services-line">Services: AI Governance Setup, AI Usage and Vendor Review, and Program and Operations Support.</p>
       <div class="btnrow">
         <a class="btn" href="https://calendar.app.google/nx4U2LGuUTfTzgim9" target="_blank" rel="noopener">Book a 30-minute intro call</a>
@@ -230,6 +236,16 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
           <li>Roadmap and OKR development</li>
           <li>Cross-team review and hand-off processes</li>
           <li>Test plans and release criteria</li></ul></div>
+      </div>
+      <div class="why-wrap">
+        <h3 id="h-why">Why work with me</h3>
+        <ul class="why">
+          <li>I've built AI and data governance from scratch, including policies, risk review, and user transparency for a startup's first AI feature.</li>
+          <li>I've run hands-on AI model evaluation, including release-blocking quality gates for a security product.</li>
+          <li>10+ years leading complex programs across product, engineering, legal, and safety at Sonos, Meta Reality Labs, and Aurora.</li>
+          <li>Formal AI ethics and governance training: Sc.M. in AI Governance &amp; Ethics from Brown, Oxford's AI Ethics programme, Harvard Data Science Review's AI Governance Intensive, and Certified AI Ethicist.</li>
+          <li>Governance sized to your team, not a heavy compliance program, handed off for you to run.</li>
+        </ul>
       </div>
       <div class="how">
         <h3>How it works</h3>
