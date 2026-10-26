@@ -261,7 +261,6 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     <section class="block" id="work-anchor" aria-labelledby="h-work">
       <h2 id="h-work">Selected work</h2>
       <div class="cases">
-        <a class="case" href="#governance" data-go="governance"><h3>Building AI governance from scratch at a civic recreation startup</h3><span class="arrow">→</span><span class="gate">Control: limited retention, then deletion</span></a>
         <a class="case" href="#fairness" data-go="fairness"><h3>Finding and fixing a skin tone gap in avatar data capture</h3><span class="arrow">→</span><span class="gate">Gate: attribute checklist before system sign-off</span></a>
         <a class="case" href="#evaluation" data-go="evaluation"><h3>Release-blocking evaluation and benchmarking for a security AI model</h3><span class="arrow">→</span><span class="gate">Gate: release blocked if false positives exceed the threshold</span></a>
         <a class="case" href="#risk-tiering" data-go="risk-tiering"><h3>Risk-tiered and collaborative safety review for autonomous vehicle requirements</h3><span class="arrow">→</span><span class="gate">Gate: Product, Engineering, Safety and Legal sign off together</span></a>
@@ -319,43 +318,6 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     </article>
   </main>
 
-  <!-- CASE 1 -->
-  <main id="v-governance" class="view" hidden>
-    <a class="back" href="#work" data-go="work">← Selected work</a>
-    <div class="cs-head">
-      <span class="label">Case study · AI governance</span>
-      <h1>Building AI governance from scratch at a civic recreation startup</h1>
-      <div class="glance"><span>Role: governance consultant</span><span>Scope: data, privacy, first AI feature</span><span class="g">Control: 7-day data retention</span></div>
-    </div>
-    <div class="cs-body">
-      <div><h2>The situation</h2><p>A civic recreation startup had no data governance function. It collected personal data (names, emails, dates of birth) and was about to launch its first AI feature.</p></div>
-      <div><h2>What I did</h2><ul>
-        <li>Assessed all personal data collected and reviewed applicable law in every state the company operated in, plus GDPR and CPRA.</li>
-        <li>Wrote and iterated the company's first Privacy Policy and Terms of Use.</li>
-        <li>When the team built an in-house people-counting model to show users how busy a court was, I built a governance checklist to document it. It covered what the backend and frontend did, which policies it touched, and what risks it created for the company, its users, and its municipal partners.</li>
-        <li>The core risks were identity and personal security, since the data touched on presence and location patterns.</li></ul></div>
-      <figure class="diagram" aria-label="How footage moved through the system">
-        <span class="row-label">How footage moved through the system</span>
-        <ol class="flow">
-          <li>Court camera captures footage<small>Input to people-counting model</small></li>
-          <li>Blur applied<small>Data minimization</small></li>
-          <li class="is-gate">Stored for 7 days<small>Municipal partners may review</small></li>
-          <li>Deleted<small>Retention limit</small></li>
-        </ol>
-        <p class="loop">Nothing retained or shared beyond the 7-day window.</p>
-      </figure>
-      <div><h2>Controls, in detail</h2><ul>
-        <li>Data minimization: blurring applied to raw footage.</li>
-        <li>Retention limit: 7-day data retention window, then deletion.</li>
-        <li>Access control: municipal partners could review footage within that window. Nothing was retained or shared beyond it.</li></ul></div>
-      <div><h2>Transparency, on two tracks</h2><ul>
-        <li>Municipal partners: contract language disclosing the AI feature, so there were no surprises.</li>
-        <li>End users: updated Privacy Policy and Terms of Use, plus an in-app notice explaining that an AI feature was in use and why. Not just buried in legal text.</li></ul></div>
-      <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">Most small teams don't need a heavy compliance program. They need a clear record of what their AI does, the risks it creates, and controls sized to those risks.</p></div>
-    </div>
-    <div class="next"><a href="#work" data-go="work">← All work</a><a href="#fairness" data-go="fairness">Next: avatar data capture →</a></div>
-  </main>
-
   <!-- CASE 2 -->
   <main id="v-fairness" class="view" hidden>
     <a class="back" href="#work" data-go="work">← Selected work</a>
@@ -385,7 +347,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
       <div class="callout"><div class="label">The outcome</div><p>The checklist became a standing gate. Every capture system had to pass testing across a wider range of appearances before sign-off.</p></div>
       <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">Bias often lives in undocumented gaps that the people closest to the work already know about. Asking them, and writing it down, is where fairness work starts.</p></div>
     </div>
-    <div class="next"><a href="#governance" data-go="governance">← Governance from scratch</a><a href="#evaluation" data-go="evaluation">Next: security AI evaluation →</a></div>
+    <div class="next"><a href="#work" data-go="work">← All work</a><a href="#evaluation" data-go="evaluation">Next: security AI evaluation →</a></div>
   </main>
 
   <!-- CASE 3 -->
@@ -549,7 +511,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
 
 <script>
 (function(){
-  var views=["home","featured","governance","fairness","evaluation","risk-tiering","resume"];
+  var views=["home","featured","fairness","evaluation","risk-tiering","resume"];
   function show(token){
     var target=token, scrollTo=null;
     if(token==="work"){target="home";scrollTo="work-anchor";}
