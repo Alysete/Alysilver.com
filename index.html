@@ -163,6 +163,7 @@ ul.plain{list-style:none;padding:0;margin:0}
 /* Resume */
 .rs-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px}
 .rs-head h1{font-size:clamp(36px,6vw,56px)}
+.rs-open{margin-top:12px;font-family:var(--display);font-weight:500;font-size:17px;color:var(--accent)}
 .rs-summary{font-size:19px;max-width:64ch;margin-top:24px}
 .job{display:grid;grid-template-columns:200px 1fr;gap:8px 32px;padding-block:24px;border-top:1px solid var(--line)}
 .job .when{font-family:var(--mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:4px}
@@ -208,8 +209,8 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
       <h1>Aly Silver</h1>
       <p class="role">AI Governance &amp; Responsible AI · Technical Program Manager</p>
       <p class="hero-q">Launching an AI feature? Do you know how your team is using AI?</p>
-      <p class="lede">I help growing companies and nonprofits get clear on both, with AI policies and a review process your team can actually run. Trained at Brown and Oxford, and I've built a governance program from scratch.</p>
-      <p class="services-line">Services: AI Governance Setup, AI Usage and Vendor Review, and Program and Operations Support.</p>
+      <p class="lede">I help growing companies and nonprofits get clear on both, with AI policies and a review process your team can actually run. Trained at Brown and Oxford, and I've formalized data and AI governance for a growing startup.</p>
+      <p class="services-line">Services: AI Governance Setup and AI Usage and Vendor Review.</p>
       <div class="btnrow">
         <a class="btn" href="https://calendar.app.google/nx4U2LGuUTfTzgim9" target="_blank" rel="noopener">Book a 30-minute intro call</a>
         <a class="btn ghost" href="#work" data-go="work">See selected work</a>
@@ -231,17 +232,12 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
           <li>Controls sized to the risk, such as data minimization, retention limits, and access rules</li>
           <li>Transparency language for users, partners, and contracts</li>
           <li>Internal AI use policies and AI literacy training</li></ul></div>
-        <div class="svc"><h3>Program and Operations Support</h3><p class="for">For teams that need structure to deliver.</p><span class="get">You get</span><ul>
-          <li>Embedded technical program management across engineering, product, and design</li>
-          <li>Roadmap and OKR development</li>
-          <li>Cross-team review and hand-off processes</li>
-          <li>Test plans and release criteria</li></ul></div>
       </div>
       <div class="why-wrap">
         <h3 id="h-why">Why work with me</h3>
         <ul class="why">
-          <li>I've built AI and data governance from scratch, including policies, risk review, and user transparency for a startup's first AI feature.</li>
-          <li>I've run hands-on AI model evaluation, including release-blocking quality gates for a security product.</li>
+          <li>I've formalized data and AI governance for a growing startup, including policies, AI feature review, and user transparency.</li>
+          <li>I've run hands-on AI model evaluation, including release-blocking quality gates for Charlemagne Labs' AI security product.</li>
           <li>10+ years leading complex programs across product, engineering, legal, and safety at Sonos, Meta Reality Labs, and Aurora.</li>
           <li>Formal AI ethics and governance training: Sc.M. in AI Governance &amp; Ethics from Brown, Oxford's AI Ethics programme, Harvard Data Science Review's AI Governance Intensive, and Certified AI Ethicist.</li>
           <li>Governance sized to your team, not a heavy compliance program, handed off for you to run.</li>
@@ -261,9 +257,10 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     <section class="block" id="work-anchor" aria-labelledby="h-work">
       <h2 id="h-work">Selected work</h2>
       <div class="cases">
-        <a class="case" href="#fairness" data-go="fairness"><h3>Finding and fixing a skin tone gap in avatar data capture</h3><span class="arrow">→</span><span class="gate">Gate: attribute checklist before system sign-off</span></a>
+        <a class="case" href="#governance" data-go="governance"><h3>Formalizing data and AI governance for a growing startup</h3><span class="arrow">→</span><span class="gate">Gate: governance review before every new AI feature</span></a>
         <a class="case" href="#evaluation" data-go="evaluation"><h3>Release-blocking evaluation and benchmarking for a security AI model</h3><span class="arrow">→</span><span class="gate">Gate: release blocked if false positives exceed the threshold</span></a>
         <a class="case" href="#risk-tiering" data-go="risk-tiering"><h3>Risk-tiered and collaborative safety review for autonomous vehicle requirements</h3><span class="arrow">→</span><span class="gate">Gate: Product, Engineering, Safety and Legal sign off together</span></a>
+        <a class="case" href="#fairness" data-go="fairness"><h3>Finding and fixing a skin tone gap in avatar data capture</h3><span class="arrow">→</span><span class="gate">Gate: attribute checklist before system sign-off</span></a>
       </div>
     </section>
 
@@ -318,6 +315,40 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     </article>
   </main>
 
+  <!-- CASE 1 -->
+  <main id="v-governance" class="view" hidden>
+    <a class="back" href="#work" data-go="work">← Selected work</a>
+    <div class="cs-head">
+      <span class="label">Case study · AI governance</span>
+      <h1>Formalizing data and AI governance for a growing startup</h1>
+      <div class="glance"><span>Role: governance consultant</span><span>Scope: data, privacy, AI features</span><span class="g">Gate: AI feature review checklist</span></div>
+    </div>
+    <div class="cs-body">
+      <div><h2>The situation</h2><p>A growing technology startup was preparing to launch AI features. Leadership wanted to strengthen and formalize its approach to data and AI governance as the company scaled and took on new partners.</p></div>
+      <div><h2>What I did</h2><ul>
+        <li>Reviewed the personal data the company collected and mapped it against applicable state privacy laws, plus GDPR and CPRA.</li>
+        <li>Drafted and iterated the company's Privacy Policy and Terms of Use.</li>
+        <li>Built a governance checklist for reviewing new AI features: what the feature does, what data it uses, which policies it touches, and what risks it creates for the company, its users, and its partners.</li>
+        <li>Applied the checklist to an emerging AI analytics feature, evaluating privacy considerations, data minimization, and appropriate safeguards.</li></ul></div>
+      <figure class="diagram" aria-label="How a new AI feature gets reviewed">
+        <span class="row-label">How a new AI feature gets reviewed</span>
+        <ol class="flow">
+          <li>Feature proposed</li>
+          <li>Document it<small>What it does and the data it uses</small></li>
+          <li>Map obligations<small>Policies and laws it touches</small></li>
+          <li>Assess risks<small>To the company, users, and partners</small></li>
+          <li class="is-gate">Sign-off<small>With controls and transparency in place</small></li>
+        </ol>
+      </figure>
+      <div><h2>Privacy by design</h2><p>Privacy safeguards were built into the feature from the start, with data minimization as the default.</p></div>
+      <div><h2>Transparency, on two tracks</h2><ul>
+        <li>Partners: contract language disclosing AI features, so there were no surprises.</li>
+        <li>Users: clear language in the Privacy Policy and Terms of Use, plus an in-app notice explaining that an AI feature was in use and why.</li></ul></div>
+      <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">Most small teams don't need a heavy compliance program. They need a clear record of what their AI does, the risks it creates, and controls sized to those risks.</p></div>
+    </div>
+    <div class="next"><a href="#work" data-go="work">← All work</a><a href="#evaluation" data-go="evaluation">Next: security AI evaluation →</a></div>
+  </main>
+
   <!-- CASE 2 -->
   <main id="v-fairness" class="view" hidden>
     <a class="back" href="#work" data-go="work">← Selected work</a>
@@ -347,7 +378,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
       <div class="callout"><div class="label">The outcome</div><p>The checklist became a standing gate. Every capture system had to pass testing across a wider range of appearances before sign-off.</p></div>
       <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">Bias often lives in undocumented gaps that the people closest to the work already know about. Asking them, and writing it down, is where fairness work starts.</p></div>
     </div>
-    <div class="next"><a href="#work" data-go="work">← All work</a><a href="#evaluation" data-go="evaluation">Next: security AI evaluation →</a></div>
+    <div class="next"><a href="#risk-tiering" data-go="risk-tiering">← Risk-tiered review</a><a href="#work" data-go="work">All work →</a></div>
   </main>
 
   <!-- CASE 3 -->
@@ -356,10 +387,10 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     <div class="cs-head">
       <span class="label">Case study · Model evaluation</span>
       <h1>Release-blocking evaluation and benchmarking for a security AI model</h1>
-      <div class="glance"><span>Role: AI evaluation and QA lead</span><span>Setting: early-stage startup</span><span class="g">Gate: false positives over 10% block release</span></div>
+      <div class="glance"><span>Role: AI evaluation and QA lead</span><span>Client: Charlemagne Labs</span><span class="g">Gate: false positives over 10% block release</span></div>
     </div>
     <div class="cs-body">
-      <div><h2>The situation</h2><p>I led evaluation for a desktop security product at an early-stage startup. It flagged phishing and unsafe links in real time, and flagged personal data being copied into applications.</p></div>
+      <div><h2>The situation</h2><p>I led evaluation for Charlemagne Labs, an early-stage startup building a desktop security product. It flagged phishing and unsafe links in real time, and flagged personal data being copied into applications.</p></div>
       <div><h2>What I built</h2><ul>
         <li>Two testing scripts, built with Claude Code. One benchmarked the model against a known set of false positives and negatives to catch drift or regression. The other scanned a sample of the top 1M websites, which are presumed safe, to surface new false positives.</li>
         <li>A human-in-the-loop review: I confirmed each new false positive manually and added it to a known-FP database so engineering could retrain the model.</li>
@@ -379,7 +410,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
       <div><h2>The control worked</h2><p>On the 1.0 release, a major UX update shipped with a model update and false positives spiked above 10%. We traced the cause. Most flags were subdomains on known-safe hosting platforms like GitHub and Substack, so we allowlisted those hosting patterns. That resolved most flagged cases and brought the rate back under the threshold.</p></div>
       <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">A control only matters if it can stop a release. Set a measurable threshold, track it continuously, and re-check whenever the model or product changes.</p></div>
     </div>
-    <div class="next"><a href="#fairness" data-go="fairness">← Avatar data capture</a><a href="#risk-tiering" data-go="risk-tiering">Next: risk-tiered review →</a></div>
+    <div class="next"><a href="#governance" data-go="governance">← Formalizing governance</a><a href="#risk-tiering" data-go="risk-tiering">Next: risk-tiered review →</a></div>
   </main>
 
   <!-- CASE 4 -->
@@ -418,7 +449,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
       <div class="callout"><div class="label">The resolution</div><p>Signed off with additional safety controls, which could be revisited once the technology had proven itself.</p></div>
       <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">Controls shouldn't be static. Match their intensity to current risk and demonstrated maturity, and define what would trigger a review.</p></div>
     </div>
-    <div class="next"><a href="#evaluation" data-go="evaluation">← Security AI evaluation</a><a href="#work" data-go="work">All work →</a></div>
+    <div class="next"><a href="#evaluation" data-go="evaluation">← Security AI evaluation</a><a href="#fairness" data-go="fairness">Next: avatar data capture →</a></div>
   </main>
 
   <!-- RESUME -->
@@ -429,6 +460,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
       <a class="btn ghost" href="Aly_Silver_Resume.pdf" target="_blank" rel="noopener">Download PDF</a>
     </div>
     <p class="rs-summary">Product and program manager with 10+ years delivering software, hardware, and AI/ML programs at tech companies, from Fortune 500 to startups. I build governance where none exists: risk review, model evaluation, and the cross-team process that makes it stick. Formally trained in AI ethics through Brown and Oxford, with hands-on experience in AI evaluation and deployment.</p>
+    <p class="rs-open">Open to full-time AI governance and responsible AI roles.</p>
 
     <section class="block" aria-labelledby="h-exp">
       <h2 id="h-exp">Experience</h2>
@@ -511,7 +543,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
 
 <script>
 (function(){
-  var views=["home","featured","fairness","evaluation","risk-tiering","resume"];
+  var views=["home","featured","governance","fairness","evaluation","risk-tiering","resume"];
   function show(token){
     var target=token, scrollTo=null;
     if(token==="work"){target="home";scrollTo="work-anchor";}
