@@ -156,6 +156,13 @@ ul.plain{list-style:none;padding:0;margin:0}
 .callout{border-left:3px solid var(--gate);background:var(--gate-bg);padding:16px 20px;border-radius:0 6px 6px 0}
 .callout .label{color:var(--gate);margin-bottom:6px}
 .callout p{font-family:var(--display);font-size:20px;font-weight:500;line-height:1.35}
+.quote{margin:0;display:grid;gap:12px;padding:24px 0 4px;border-top:1px solid var(--line)}
+.quote blockquote{margin:0;font-family:var(--display);font-size:clamp(19px,2.4vw,22px);font-weight:500;line-height:1.4;color:var(--fg)}
+.quote figcaption{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.quote figcaption b{color:var(--accent);font-weight:500}
+.testimonials{display:grid;gap:8px 40px}
+@media (min-width:760px){.testimonials{grid-template-columns:1fr 1fr}}
+.testimonials .quote blockquote{font-size:clamp(17px,2vw,19px)}
 .takeaway{border-top:2px solid var(--fg);padding-top:16px}
 .next{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .next a{font-family:var(--display);font-size:18px;text-decoration:none}
@@ -261,6 +268,20 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
         <a class="case" href="#evaluation" data-go="evaluation"><h3>Release-blocking evaluation and benchmarking for a security AI model</h3><span class="arrow">→</span><span class="gate">Gate: release blocked if false positives exceed the threshold</span></a>
         <a class="case" href="#risk-tiering" data-go="risk-tiering"><h3>Risk-tiered and collaborative safety review for autonomous vehicle requirements</h3><span class="arrow">→</span><span class="gate">Gate: Product, Engineering, Safety and Legal sign off together</span></a>
         <a class="case" href="#fairness" data-go="fairness"><h3>Finding and fixing a skin tone gap in avatar data capture</h3><span class="arrow">→</span><span class="gate">Gate: attribute checklist before system sign-off</span></a>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="h-test">
+      <h2 id="h-test">What people say</h2>
+      <div class="testimonials">
+        <figure class="quote">
+          <blockquote>“Aly took our handoff between Product, Engineering, and Safety/Legal and turned it into a streamlined process where everyone signed off together. Sign-offs got faster and the teams had a lot more visibility into each other’s work. She’s solution oriented, collaborative, and runs a program well.”</blockquote>
+          <figcaption><b>Roberto Ortega</b>, Director of Product, Uber ATG. Now Head of PMO at Anduril Industries</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>“I really enjoyed working with Alyssa for about a year. She was great to work with, very knowledgeable, and genuinely cares about the work she does. She played an important role in helping us research and implement our data privacy and governance practices. I’d definitely recommend her to anyone looking for guidance in this area.”</blockquote>
+          <figcaption><b>Aaron Angst</b>, CEO, ParkView</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -447,6 +468,10 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
       </figure>
       <div><h2>Risk tiering in practice</h2><p>Not every requirement carried the same risk. Pedestrian interaction requirements were the highest tier and got more review time and scrutiny by default.</p><p>One example covered vehicle behavior around pedestrians with disabilities in crosswalks. Product and Engineering wanted to move forward. Safety and Legal needed more time for edge cases. We worked it through in a biweekly working session.</p></div>
       <div class="callout"><div class="label">The resolution</div><p>Signed off with additional safety controls, which could be revisited once the technology had proven itself.</p></div>
+      <figure class="quote">
+        <blockquote>“Aly took our handoff between Product, Engineering, and Safety/Legal and turned it into a streamlined process where everyone signed off together. Sign-offs got faster and the teams had a lot more visibility into each other’s work. She’s solution oriented, collaborative, and runs a program well.”</blockquote>
+        <figcaption><b>Roberto Ortega</b>, Director of Product, Uber ATG. Now Head of PMO at Anduril Industries</figcaption>
+      </figure>
       <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">Controls shouldn't be static. Match their intensity to current risk and demonstrated maturity, and define what would trigger a review.</p></div>
     </div>
     <div class="next"><a href="#evaluation" data-go="evaluation">← Security AI evaluation</a><a href="#fairness" data-go="fairness">Next: avatar data capture →</a></div>
