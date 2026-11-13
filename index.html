@@ -161,7 +161,7 @@ ul.plain{list-style:none;padding:0;margin:0}
 .quote figcaption{font-family:var(--mono);font-size:13px;color:var(--muted)}
 .quote figcaption b{color:var(--accent);font-weight:500}
 .testimonials{display:grid;gap:8px 40px}
-@media (min-width:760px){.testimonials{grid-template-columns:1fr 1fr}}
+@media (min-width:900px){.testimonials{grid-template-columns:repeat(3,1fr)}}
 .testimonials .quote blockquote{font-size:clamp(17px,2vw,19px)}
 .takeaway{border-top:2px solid var(--fg);padding-top:16px}
 .next{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
@@ -274,6 +274,10 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     <section class="block" aria-labelledby="h-test">
       <h2 id="h-test">What people say</h2>
       <div class="testimonials">
+        <figure class="quote">
+          <blockquote>“Aly built our benchmarking and model evaluation tools, from automated testing scripts to an AI testing agent, with a human in the loop throughout. She pushed our leadership team to set KPIs for model performance and thresholds for every new release. Her mix of program management, hands-on technical building, and QA rigor kept Agent Charley’s quality improving.”</blockquote>
+          <figcaption><b>Jeremy Galen</b>, CEO, Charlemagne Labs</figcaption>
+        </figure>
         <figure class="quote">
           <blockquote>“Aly took our handoff between Product, Engineering, and Safety/Legal and turned it into a streamlined process where everyone signed off together. Sign-offs got faster and the teams had a lot more visibility into each other’s work. She’s solution oriented, collaborative, and runs a program well.”</blockquote>
           <figcaption><b>Roberto Ortega</b>, Director of Product, Uber ATG. Now Head of PMO at Anduril Industries</figcaption>
@@ -429,6 +433,10 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
         <p class="loop"><b>Above 10%:</b> fix, retrain, and run the loop again. Older known FPs are re-checked periodically.</p>
       </figure>
       <div><h2>The control worked</h2><p>On the 1.0 release, a major UX update shipped with a model update and false positives spiked above 10%. We traced the cause. Most flags were subdomains on known-safe hosting platforms like GitHub and Substack, so we allowlisted those hosting patterns. That resolved most flagged cases and brought the rate back under the threshold.</p></div>
+      <figure class="quote">
+        <blockquote>“Aly built our benchmarking and model evaluation tools, from automated testing scripts to an AI testing agent, with a human in the loop throughout. She pushed our leadership team to set KPIs for model performance and thresholds for every new release. Her mix of program management, hands-on technical building, and QA rigor kept Agent Charley’s quality improving.”</blockquote>
+        <figcaption><b>Jeremy Galen</b>, CEO, Charlemagne Labs</figcaption>
+      </figure>
       <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">A control only matters if it can stop a release. Set a measurable threshold, track it continuously, and re-check whenever the model or product changes.</p></div>
     </div>
     <div class="next"><a href="#governance" data-go="governance">← Formalizing governance</a><a href="#risk-tiering" data-go="risk-tiering">Next: risk-tiered review →</a></div>
@@ -553,10 +561,16 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     <section class="block" aria-labelledby="h-sk">
       <h2 id="h-sk">Expertise</h2>
       <div class="skills">
-        <span>AI Governance &amp; Ethics</span><span>Responsible AI Frameworks</span><span>AI Ethics Strategy</span><span>AI/ML Risk Assessment</span><span>QA</span><span>Model Evaluation (Performance, Drift &amp; Reliability)</span><span>NIST AI RMF</span><span>EU AI Act</span><span>CPRA</span><span>GDPR</span><span>Risk Tiering &amp; Control Documentation</span><span>Third-Party AI &amp; Vendor Review</span><span>PII Removal &amp; Data Obfuscation</span><span>Regulatory Roadmap Creation</span><span>State-Law Compliant Privacy Policies</span><span>Data Auditing</span><span>Agile/Scrum</span><span>Cross-Functional Stakeholder Management</span><span>Monitoring, Evaluating &amp; Reporting</span><span>Team Training &amp; Community-Building</span>
+        <span>AI Governance &amp; Ethics</span><span>Responsible AI Frameworks</span><span>AI Ethics Strategy</span><span>AI/ML Risk Assessment</span><span>QA</span><span>Model Evaluation (Performance, Drift &amp; Reliability)</span><span>Risk Tiering &amp; Control Documentation</span><span>Third-Party AI &amp; Vendor Review</span><span>PII Removal &amp; Data Obfuscation</span><span>Regulatory Roadmap Creation</span><span>State-Law Compliant Privacy Policies</span><span>Data Auditing</span><span>Agile/Scrum</span><span>Cross-Functional Stakeholder Management</span><span>Monitoring, Evaluating &amp; Reporting</span><span>Team Training &amp; Community-Building</span>
       </div>
       <p class="label" style="margin-top:8px">Tools</p>
-      <div class="skills"><span>Google Suite</span><span>Jira</span><span>Confluence</span><span>Asana</span><span>Figma</span><span>GitHub</span><span>Tableau</span><span>Claude</span><span>Gemini</span><span>Oxethica</span></div>
+      <div class="skills"><span>Google Suite</span><span>Jira</span><span>Confluence</span><span>Asana</span><span>Figma</span><span>GitHub</span><span>Tableau</span><span>Claude</span><span>Gemini</span></div>
+       <p class="label" style="margin-top:8px">Governance frameworks &amp; tools</p>
+      <ul class="plain creds">
+        <li>Applied in client work: CPRA, GDPR, US state privacy laws</li>
+        <li>Working familiarity: NIST AI RMF, EU AI Act</li>
+        <li>Platforms (academic): Oxethica GRC Platform, used in the Oxford programme</li>
+      </ul>   
     </section>
   </main>
 
