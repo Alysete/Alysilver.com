@@ -106,6 +106,7 @@ section.block>h2{font-size:clamp(26px,4vw,34px)}
 .how{display:grid;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px}
 .how h3{font-size:20px}
 .how ol{margin:0;padding-left:1.3em;display:grid;gap:8px;font-size:16px}
+.svc .out{font-size:14px;font-style:italic;color:var(--muted);margin-top:4px}
 .services-line{font-family:var(--mono);font-size:14px;color:var(--muted)}
 .terms{font-family:var(--mono);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 24px}
 .terms span b{color:var(--accent);font-weight:500}
@@ -165,6 +166,8 @@ ul.plain{list-style:none;padding:0;margin:0}
 @media (min-width:900px){.testimonials{grid-template-columns:repeat(3,1fr)}}
 .testimonials .quote blockquote{font-size:clamp(17px,2vw,19px)}
 .takeaway{border-top:2px solid var(--fg);padding-top:16px}
+.cs-cta{margin-top:48px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding:20px 24px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.cs-cta p{font-family:var(--display);font-size:20px;font-weight:500}
 .next{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .next a{font-family:var(--display);font-size:18px;text-decoration:none}
 
@@ -218,7 +221,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
       <p class="role">AI Governance &amp; Responsible AI · Technical Program Manager</p>
       <p class="hero-q">Launching an AI feature? Do you know how your team is using AI?</p>
       <p class="lede">I help growing companies and nonprofits get clear on both, with AI policies and a review process your team can actually run. Trained at Brown and Oxford, and I've formalized data and AI governance for a growing startup.</p>
-      <p class="services-line">Services: AI Governance Setup and AI Usage and Vendor Review.</p>
+      <p class="services-line">Services: AI Model Evaluation &amp; Release Readiness, AI Governance Setup, and AI Usage and Vendor Review.</p>
       <div class="btnrow">
         <a class="btn" href="https://calendar.app.google/nx4U2LGuUTfTzgim9" target="_blank" rel="noopener">Book a 30-minute intro call</a>
         <a class="btn ghost" href="#work" data-go="work">See selected work</a>
@@ -230,6 +233,10 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     <section class="block" id="services-anchor" aria-labelledby="h-svc">
       <h2 id="h-svc">Services</h2>
       <div class="services">
+        <div class="svc"><h3>AI Model Evaluation &amp; Release Readiness</h3><p class="for">For teams building their own AI models who want them thoroughly tested before release.</p><span class="get">You get</span><ul>
+          <li>Custom testing scripts that benchmark your model against known cases and catch drift or regression, which your team keeps and runs</li>
+          <li>Acceptance criteria and release thresholds, so every release has a clear pass or fail bar</li>
+          <li>A testing process and templates, including a human review loop for flagged results</li></ul></div>
         <div class="svc"><h3>AI Governance Setup</h3><p class="for">For organizations that have launched an AI feature or plan to launch one soon.</p><span class="get">You get</span><ul>
           <li>An inventory of the personal data your AI features and tools use, including what's shared with AI vendors</li>
           <li>A map of the privacy and AI laws likely to apply, for review with your counsel</li>
@@ -246,7 +253,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
         <ul class="why">
           <li>I've formalized data and AI governance for a growing startup, including policies, AI feature review, and user transparency.</li>
           <li>I've run hands-on AI model evaluation, including release-blocking quality gates for Charlemagne Labs' AI security product.</li>
-          <li>10+ years leading complex programs across product, engineering, legal, and safety at Sonos, Meta Reality Labs, and Aurora.</li>
+          <li>10+ years leading complex programs across product, engineering, legal, and safety, most recently at Sonos, Meta Reality Labs, and Aurora.</li>
           <li>Formal AI ethics and governance training: Sc.M. in AI Governance &amp; Ethics from Brown, Oxford's AI Ethics programme, Harvard Data Science Review's AI Governance Intensive, and Certified AI Ethicist.</li>
           <li>Governance sized to your team, not a heavy compliance program, handed off for you to run.</li>
         </ul>
@@ -372,6 +379,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
         <li>Users: clear language in the Privacy Policy and Terms of Use, plus an in-app notice explaining that an AI feature was in use and why.</li></ul></div>
       <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">Most small teams don't need a heavy compliance program. They need a clear record of what their AI does, the risks it creates, and controls sized to those risks.</p></div>
     </div>
+    <div class="cs-cta"><p>Sound familiar?</p><a class="btn" href="https://calendar.app.google/nx4U2LGuUTfTzgim9" target="_blank" rel="noopener">Book a 30-minute intro call</a></div>
     <div class="next"><a href="#work" data-go="work">← All work</a><a href="#evaluation" data-go="evaluation">Next: security AI evaluation →</a></div>
   </main>
 
@@ -404,6 +412,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
       <div class="callout"><div class="label">The outcome</div><p>The checklist became a standing gate. Every capture system had to pass testing across a wider range of appearances before sign-off.</p></div>
       <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">Bias often lives in undocumented gaps that the people closest to the work already know about. Asking them, and writing it down, is where fairness work starts.</p></div>
     </div>
+    <div class="cs-cta"><p>Sound familiar?</p><a class="btn" href="https://calendar.app.google/nx4U2LGuUTfTzgim9" target="_blank" rel="noopener">Book a 30-minute intro call</a></div>
     <div class="next"><a href="#risk-tiering" data-go="risk-tiering">← Risk-tiered review</a><a href="#work" data-go="work">All work →</a></div>
   </main>
 
@@ -433,13 +442,14 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
         </ol>
         <p class="loop"><b>Above 10%:</b> fix, retrain, and run the loop again. Older known FPs are re-checked periodically.</p>
       </figure>
-      <div><h2>The control worked</h2><p>On the 1.0 release, a major UX update shipped with a model update and false positives spiked above 10%. We traced the cause. Most flags were subdomains on known-safe hosting platforms like GitHub and Substack, so we allowlisted those hosting patterns. That resolved most flagged cases and brought the rate back under the threshold.</p></div>
+      <div><h2>The control worked</h2><p>On the 1.0 release, a major UX update shipped with a model update and false positives spiked above 10%. We traced the cause. Most were ‘suspicious’ warnings on subdomains of known hosting platforms like GitHub and Substack. We removed the suspicious-level warning for those platforms while keeping specific checks running on their subdomains. That resolved most flagged cases and brought the rate back under the threshold.</p></div>
       <figure class="quote">
         <blockquote>“Aly built our benchmarking and model evaluation tools, from automated testing scripts to an AI testing agent, with a human in the loop throughout. She pushed our leadership team to set KPIs for model performance and thresholds for every new release. Her mix of program management, hands-on technical building, and QA rigor kept Agent Charley’s quality improving.”</blockquote>
         <figcaption><b>Jeremy Galen</b>, CEO, Charlemagne Labs</figcaption>
       </figure>
       <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">A control only matters if it can stop a release. Set a measurable threshold, track it continuously, and re-check whenever the model or product changes.</p></div>
     </div>
+    <div class="cs-cta"><p>Sound familiar?</p><a class="btn" href="https://calendar.app.google/nx4U2LGuUTfTzgim9" target="_blank" rel="noopener">Book a 30-minute intro call</a></div>
     <div class="next"><a href="#governance" data-go="governance">← Formalizing governance</a><a href="#risk-tiering" data-go="risk-tiering">Next: risk-tiered review →</a></div>
   </main>
 
@@ -483,6 +493,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
       </figure>
       <div class="takeaway"><span class="label">What this means for your organization</span><p style="margin-top:8px">Controls shouldn't be static. Match their intensity to current risk and demonstrated maturity, and define what would trigger a review.</p></div>
     </div>
+    <div class="cs-cta"><p>Sound familiar?</p><a class="btn" href="https://calendar.app.google/nx4U2LGuUTfTzgim9" target="_blank" rel="noopener">Book a 30-minute intro call</a></div>
     <div class="next"><a href="#evaluation" data-go="evaluation">← Security AI evaluation</a><a href="#fairness" data-go="fairness">Next: avatar data capture →</a></div>
   </main>
 
