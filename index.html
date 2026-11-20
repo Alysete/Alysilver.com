@@ -114,6 +114,7 @@ section.block>h2{font-size:clamp(26px,4vw,34px)}
 .case{display:grid;grid-template-columns:1fr auto;gap:8px 24px;align-items:baseline;padding-block:22px;border-bottom:1px solid var(--line);
   text-decoration:none;color:var(--fg)}
 .case h3{font-size:clamp(20px,3vw,25px);font-weight:500;min-width:0}
+.situation{grid-column:1/-1;font-family:var(--body);font-style:italic;font-size:16px;color:var(--muted);line-height:1.45;max-width:60ch}
 .case .arrow{font-family:var(--mono);color:var(--accent)}
 .case:hover h3{color:var(--accent)}
 .gate{grid-column:1/-1;justify-self:start;font-family:var(--mono);font-size:12.5px;color:var(--gate);background:var(--gate-bg);
@@ -262,12 +263,12 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     </section>
 
     <section class="block" id="work-anchor" aria-labelledby="h-work">
-      <h2 id="h-work">Selected work</h2>
+      <h2 id="h-work">Who I help</h2>
       <div class="cases">
-        <a class="case" href="#governance" data-go="governance"><h3>Formalizing data and AI governance for a growing startup</h3><span class="arrow">→</span><span class="gate">Gate: governance review before every new AI feature</span></a>
-        <a class="case" href="#evaluation" data-go="evaluation"><h3>Release-blocking evaluation and benchmarking for a security AI model</h3><span class="arrow">→</span><span class="gate">Gate: release blocked if false positives exceed the threshold</span></a>
-        <a class="case" href="#risk-tiering" data-go="risk-tiering"><h3>Risk-tiered and collaborative safety review for autonomous vehicle requirements</h3><span class="arrow">→</span><span class="gate">Gate: Product, Engineering, Safety and Legal sign off together</span></a>
-        <a class="case" href="#fairness" data-go="fairness"><h3>Finding and fixing a skin tone gap in avatar data capture</h3><span class="arrow">→</span><span class="gate">Gate: attribute checklist before system sign-off</span></a>
+        <a class="case" href="#governance" data-go="governance"><span class="situation">“We’re launching an AI feature, but we have no internal or external policies in place.”</span><h3>Formalizing data and AI governance for a growing startup</h3><span class="arrow">→</span><span class="gate">Outcome: clear AI disclosures for users and partners, plus an internal AI use policy</span></a>
+        <a class="case" href="#evaluation" data-go="evaluation"><span class="situation">“We’re about to launch an AI model, but we’re not sure it works as well as we’re telling clients.”</span><h3>Release-blocking evaluation and benchmarking for a security AI model</h3><span class="arrow">→</span><span class="gate">Outcome: every model release measured against a benchmark and clear success criteria</span></a>
+        <a class="case" href="#risk-tiering" data-go="risk-tiering"><span class="situation">“Our product and engineering workflows aren’t in sync with legal and safety, so problems surface late and work gets redone.”</span><h3>Risk-tiered and collaborative safety review for autonomous vehicle requirements</h3><span class="arrow">→</span><span class="gate">Outcome: faster sign-off through shared visibility across Product, Engineering, Legal and Safety</span></a>
+        <a class="case" href="#fairness" data-go="fairness"><span class="situation">“We don’t know where the gaps are in our data, or how to evaluate and document them.”</span><h3>Finding and fixing a skin tone gap in avatar data capture</h3><span class="arrow">→</span><span class="gate">Outcome: documented capture limits across skin tones and physical features, then fixed the gap</span></a>
       </div>
     </section>
 
@@ -346,7 +347,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     <div class="cs-head">
       <span class="label">Case study · AI governance</span>
       <h1>Formalizing data and AI governance for a growing startup</h1>
-      <div class="glance"><span>Role: governance consultant</span><span>Scope: data, privacy, AI features</span><span class="g">Gate: AI feature review checklist</span></div>
+      <div class="glance"><span>Role: governance consultant</span><span>Scope: data, privacy, AI features</span><span class="g">Control: AI feature review checklist</span></div>
     </div>
     <div class="cs-body">
       <div><h2>The situation</h2><p>A growing technology startup was preparing to launch AI features. Leadership wanted to strengthen and formalize its approach to data and AI governance as the company scaled and took on new partners.</p></div>
@@ -380,7 +381,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     <div class="cs-head">
       <span class="label">Case study · Bias and fairness</span>
       <h1>Finding and fixing a skin tone gap in avatar data capture</h1>
-      <div class="glance"><span>Role: technical program manager</span><span>Setting: metaverse research company</span><span class="g">Gate: attribute checklist</span></div>
+      <div class="glance"><span>Role: technical program manager</span><span>Setting: metaverse research company</span><span class="g">Control: attribute checklist</span></div>
     </div>
     <div class="cs-body">
       <div><h2>The situation</h2><p>At a metaverse research company, I worked hands-on with engineers building hardware systems that captured human data for avatar research.</p></div>
@@ -412,7 +413,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
     <div class="cs-head">
       <span class="label">Case study · Model evaluation</span>
       <h1>Release-blocking evaluation and benchmarking for a security AI model</h1>
-      <div class="glance"><span>Role: AI evaluation and QA lead</span><span>Client: Charlemagne Labs</span><span class="g">Gate: false positives over 10% block release</span></div>
+      <div class="glance"><span>Role: AI evaluation and QA lead</span><span>Client: Charlemagne Labs</span><span class="g">Control: false positives over 10% block release</span></div>
     </div>
     <div class="cs-body">
       <div><h2>The situation</h2><p>I led evaluation for Charlemagne Labs, an early-stage startup building a desktop security product. It flagged phishing and unsafe links in real time, and flagged personal data being copied into applications.</p></div>
@@ -570,7 +571,7 @@ footer{border-top:1px solid var(--line);padding-block:24px 40px;display:flex;fle
         <li>Applied in client work: CPRA, GDPR, US state privacy laws</li>
         <li>Working familiarity: NIST AI RMF, EU AI Act</li>
         <li>Platforms (academic): Oxethica GRC Platform, used in the Oxford programme</li>
-      </ul>   
+      </ul>
     </section>
   </main>
 
